@@ -1,0 +1,705 @@
+.boxShadow
+{
+    box-shadow: 0 1px 4px #006D85;
+}
+
+.fadeOut{
+	transition : opacity 0.5s;
+	opacity    : 0 !important;
+}
+.mobileFadeOut
+{
+    transition : opacity 1.0s;
+	opacity    : 0 !important;
+}
+
+.fadeIn{
+	transition : opacity 0.5s;
+	opacity    : 1 !important;
+}
+.mobileFadeIn
+{
+    transition : opacity 1.0s;
+	opacity    : 1 !important;
+}
+
+.prevImg
+{
+    top: 0;
+    left: 0;
+
+    opacity: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../image/HelloWorld_web_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    z-index: -1;
+}
+.secondImg
+{
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../image/DeskBGImg_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    z-index: -1;
+}
+.thirdImg
+{
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../image/DeskBGImg_3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    z-index: -1;
+}
+.nextImg
+{
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../image/HelloWorld_web_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    z-index: -1;
+}
+
+body
+{
+    position: relative;
+}
+
+.decoDesktop
+{
+    display: inline;
+}
+.decoMobile
+{
+    display: none;
+}
+
+.HelloWorldLogo
+{
+    margin-right: 0;
+    margin-left: auto;
+    width: 100%;
+}
+
+.image1
+{
+    background-image: url("../image/HelloWorld_web_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.image2
+{
+    background-image: url("../image/HelloWorld_web_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+body
+{
+    /* background-image: url("../image/backGroundImg.png"); */
+    /* background-image: url("../image/HelloWorld_web_2.jpg"); */
+    font-family: "M PLUS 1p", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #006D85;
+    font-size: 16px;
+}
+
+
+.header
+{
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.title
+{
+    margin-top: 128px;
+    padding-top: 32px;
+    /* margin-bottom: 24px; */
+    width: 80%;
+    margin-left: 20%;
+
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    display: flex;
+}
+.galleryTitle
+{
+    margin-top: 128px;
+    padding-top: 32px;
+    margin-bottom: 24px;
+    width: 80%;
+    margin-left: 80px;
+
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    display: flex;
+}
+.exhibitorTitle
+{
+    margin-top: 128px;
+    padding-top: 32px;
+    margin-bottom: 24px;
+    width: 90%;
+    margin-left: 50px;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    display: flex;
+}
+.titleText
+{
+    margin-left: 32px;
+}
+
+.days
+{
+    display: flex;
+}
+
+.overViewBackImg
+{
+    width: 50%;
+    margin: 0 auto;
+    /* padding-top: 16px; */
+    padding-bottom: 64px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.overview
+{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.overviewTitleDesktop
+{
+    /* margin-top: 128px; */
+    padding-top: 32px;
+    margin-bottom: 24px;
+    width: 80%;
+    /* margin-left: 10%; */
+
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    display: flex;
+}
+.overviewTitleMobile
+{
+    display: none;
+}
+.overviewText
+{
+    margin-left: 48px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery
+{
+    width: 80%;
+    margin:0 auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding-bottom: 64px;
+}
+.galleryImgColumns
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+}
+
+.exhibitor
+{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.exhibitorContents
+{
+    display: grid;
+    grid-template-columns: 100fr 1fr 100fr;
+    gap: 20px;
+
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+.exhibitorCell
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.exhibitorTitleDesktop
+{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.exhibitorTitleMobile
+{
+    display: none;
+}
+.exhibitorLineParallel
+{
+    border-top: 5px dotted #006D85;
+    width: auto;
+}
+.exhibitorLineParallelMobile
+{
+    display: none;
+}
+.exhibitorLineVertical
+{
+    border-right: 5px dotted #006D85;
+    height: 240px;
+}
+.exhibitorAbout
+{
+    line-height: 1.5;
+}
+/* .width60
+
+.width80
+{
+    width: 80%;
+    margin: 0 auto;
+}
+/* 
+.access
+{
+    width: 80%;
+    margin: 0 auto;
+} */
+
+.accessTitle
+{
+    margin-top: 128px;
+    padding-top: 48px;
+    margin-bottom: 24px;
+    width: 90%;
+    margin-left: 80px;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 800;
+    display: flex;
+}
+.accessDays
+{
+    display: flex;
+    /* padding-bottom: 32px; */
+    margin-bottom: 20%;
+}
+.accessTime
+{
+    font-size: 20px;
+}
+
+.accessText
+{
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+.accessDay1
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 24px;
+}
+.accessDay2
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 24px;
+}
+.accessContents
+{
+    padding-bottom: 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+}
+.benueName
+{
+    /* margin: 10px auto; */
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.benue
+{
+    /* border-top: 5px dotted #006D85; */
+    padding-top: 15%;
+    font-size: 24px;
+    display: flex;
+}
+.benueLine
+{
+    border-top: 5px dotted #006D85;
+    padding-left: 32px;
+}
+.mapPinImg
+{
+    width: 21px;
+    height: 29px;
+    /* height: auto; */
+}
+.accessBackColor
+{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.accessMap
+{
+    /* width: 470px;
+    height: 470px; */
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.footer
+{
+    width: 80%;
+    margin: 128px auto 0 auto;
+    display: flex;
+    margin-bottom: 128px;
+}
+.footerTitle
+{
+    font-size: 20px;
+}
+.footerExhibitor
+{
+    margin-left: 32px;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  box-shadow: 0 0 80px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dayLine
+{
+    margin-top: 30px;
+    margin-left: 22px;
+    margin-right: 22px;
+    border-top: 2px solid #006D85;
+    width: 30px;
+}
+
+.mobileOverview
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 200px;
+    /* padding-top: 16px; */
+    padding-bottom: 30px;
+    /* background-color: #FFFFFF; */
+    border-radius: 30px;
+
+    display: none;
+}
+.exhibitorBackImg
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mapFlex
+{
+    width: 50%;
+}
+
+@media (max-width: 768px)
+{
+    .hidden
+    {
+        display: none;
+    }
+
+    .prevImg
+    {
+        background-image: url("../image/mobileBGImg_1.png");
+    }
+    .nextImg
+    {
+        background-image: url("../image/mobileBGImg_2.png");
+    }
+
+
+    .exhibitorBackImg
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .accessTitle
+    {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .mobileOverview{display: block;}
+
+    .HelloWorldLogo
+    {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .header
+    {
+        padding: 0;
+        /* padding-top: 100%; */
+        margin-top: 142%;
+        /* margin: 0; */
+    }
+
+    .overViewBackImg
+    {
+        display: none;
+    }
+
+    .titleText
+    {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .decoDesktop
+    {
+        display: none;
+    }
+    .decoMobile
+    {
+        display: inline;
+    }
+    .galleryImgs
+    {
+        width: 136px;
+        height: 136px;
+    }
+
+    .overviewTitleDesktop
+    {
+        display: none;
+    }
+    .overviewTitleMobile
+    {
+        margin-top: 128px;
+        padding-top: 32px;
+        margin-bottom: 24px;
+        width: 90%;
+        margin-left: 50px;
+
+        align-items: center;
+
+        font-size: 32px;
+        font-weight: 800;
+
+        display: flex;
+    }
+
+    .exhibitorTitleDesktop
+    {
+        display: none;
+    }
+    .exhibitorTitleMobile
+    {
+        display: block;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .exhibitorTop
+    {
+        display: inline;
+        justify-content: space-between;
+    }
+    .exhibitorDown
+    {
+        display: inline;
+        justify-content: space-between;
+    }
+    .exhibitorCell
+    {
+        width: 90%;
+        /* margin: 0 auto; */
+        margin: 16px auto 0 auto;
+        margin-top: 16px;
+    }
+    .exhibitorLineParallel
+    {
+        display: none;
+    }
+    .exhibitorLineVertical
+    {
+        display: none;
+    }
+    .exhibitorLineParallelMobile
+    {
+        display: block;
+        border-top: 5px dotted #006D85;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: auto;
+    }
+    .exhibitorContents
+    {
+        display: block;
+
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 64px;
+    }
+
+    .accessContents
+    {
+        display: block;
+    }
+    .accessText
+    {
+        /* margin-top: 32px; */
+        margin: 32px auto 0 auto;
+    }
+    .accessTime
+    {
+        font-size: 16px;
+    }
+    .accessInfo
+    {
+        padding-bottom: 32px;
+    }
+    .address
+    {
+        font-size: 12px;
+    }
+
+    .footerTitle
+    {
+        font-size: 12px;
+        width: 10%;
+    }
+    .footer
+    {
+        font-size: 12px;
+        /* padding-bottom: 64px; */
+        justify-content: space-between;
+        /* margin-left: 50px;
+        margin-right: 50px; */
+        margin-top: 64px;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .footerExhibitor
+    {
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    .accessMap
+    {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    .title
+    {
+        width: 90%;
+        margin: 0 auto;
+        /* margin-right: 0; */
+        margin-bottom: 32px;
+    }
+
+    .dayLine
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .gallery
+    {
+        margin-top: 200px;
+        width: 90%;
+    }
+    .galleryTitle
+    {
+        margin-left: 50px;
+        margin-top: ;
+    }
+    .exhibitor
+    {
+        margin-top: 200px;
+    }
+    .access
+    {
+        margin-top: 200px;
+    }
+
+    .mapFlex
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
