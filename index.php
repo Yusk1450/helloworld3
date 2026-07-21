@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-    <!-- <div>
+    <div>
         <div class="gallery glass">
         <div class="galleryTitle">
             <img src="image/decoImg.png" class="decoDesktop">
@@ -79,20 +79,19 @@
             <div class="titleText">出展作品</div>
         </div>
         <div class="galleryImgColumns">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
-            <img src="image/tempGalleryImg.png" class="galleryImgs boxShadow">
+        <?php
+        $works = json_decode(file_get_contents('./works.json'), true);
+        foreach ($works as $id => $work):
+        ?>
+            <img src="./image/works/<?php echo $work['img']; ?>" class="galleryImgs boxShadow" data-id="<?php echo $id ?>">
+        <?php
+            endforeach;
+        ?>
+        <?php for ($i = 0; $i < 3; $i++): ?>
+            <div class="galleryDummy"></div>
+        <?php endfor; ?>
         </div>
-    </div> -->
+    </div>
 
     <div class="glass mobileOverview">
         <div>
@@ -214,6 +213,24 @@
             HOPTER TECH SCHOOL
         </p>
     </div>
+    <div class="lightbox" id="lightbox">
+        <div class="lightboxOverlay" data-close></div>
+        <div class="lightboxContent">
+            <button class="lightboxClose" type="button" data-close aria-label="閉じる">&times;</button>
+            <div class="lightboxImgWrap">
+                <img src="" alt="" class="lightboxImg" id="lbImg">
+            </div>
+            <div class="lightboxInfo">
+                <div class="lightboxName" id="lbName"></div>
+                <div class="lightboxAuthor" id="lbAuthor"></div>
+                <div class="lightboxTech" id="lbTech"></div>
+                <div class="lightboxAbout" id="lbAbout"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.worksData = <?php echo json_encode($works, JSON_UNESCAPED_UNICODE); ?>;
+    </script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/index.js"></script>
 </body>

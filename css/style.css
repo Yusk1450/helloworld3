@@ -262,8 +262,118 @@ body
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px 20px;
+}
+
+.galleryImgs
+{
+    width : 100%;
+    max-width : 221px;
+    cursor: pointer;
+}
+
+.galleryDummy
+{
+    width: 100%;
+    max-width: 221px;
+    height: 0;
+    visibility: hidden;
+}
+
+.lightbox
+{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 20px;
+}
+.lightbox.open
+{
+    display: flex;
+}
+.lightboxOverlay
+{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.lightboxContent
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 48px 40px;
+    background: #FFFFFF;
+    color: #006D85;
+    font-family: "M PLUS 1p", sans-serif;
+    border-radius: 20px;
+}
+.lightboxClose
+{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 32px;
+    line-height: 1;
+    color: #006D85;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.lightboxImgWrap
+{
+    width: 50%;
+}
+.lightboxImg
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.lightboxInfo
+{
+    width: 50%;
+}
+.lightboxName
+{
+    font-size: 24px;
+}
+.lightboxAuthor
+{
+    margin-top: 16px;
+}
+.lightboxTech
+{
+    margin-top: 8px;
+    font-size: 14px;
+}
+.lightboxAbout
+{
+    margin-top: 24px;
+    line-height: 2;
+}
+
+@media (max-width: 768px)
+{
+    .lightboxContent
+    {
+        flex-direction: column;
+        gap: 16px;
+        padding: 48px 24px 24px;
+    }
+    .lightboxImgWrap,
+    .lightboxInfo
+    {
+        width: 100%;
+    }
 }
 
 .exhibitor
@@ -684,7 +794,7 @@ body
     .galleryTitle
     {
         margin-left: 50px;
-        margin-top: ;
+        /* margin-top: ; */
     }
     .exhibitor
     {
